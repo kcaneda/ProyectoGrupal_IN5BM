@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --verde-oscuro: #0b8a7c;
+    --verde-principal: #3aa79a;
+    --verde-suave: #5fc3b2;
+    --verde-claro: #7fe3cf;
+    --verde-muy-claro: #a8f5e6;
+    --blanco: #ffffff;
+    --gris-texto: #2f4f4f;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: var(--verde-muy-claro);
+    color: var(--gris-texto);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+h2{ 
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 2.7em;
+}
+
+.titulos {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.container{
+    max-width: 1500px;
+    margin: auto;
+}
+
+header{
+    background-color: var(--verde-oscuro);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: var(--blanco);
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--blanco);
+}
+
+header a:hover{
+    color: var(--verde-claro);
+}
+
+main {
+    display: flex;
+    margin: 20px;
+}
+
+.productos {
+    flex: 3;
+    margin-right: 20px;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.producto {
+    text-align: center;
+    background-color: var(--blanco);
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.producto p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--verde-oscuro);
+}   
+
+footer{
+    background-color: var(--verde-oscuro);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: var(--blanco);
+}
+
+footer .container{
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accesorios</title>
+<body>
+    <header>
+        <div class="container">
+            <p class="logo">Accesorios para Computadoras y Teléfonos</p>
+            <nav>
+                <a href="inicio">Inicio</a>
+                <a href="#computadoras">Computadoras</a>
+                <a href="#telefonos">Teléfonos</a>
+            </nav>
+        </div>
+    </header>
+    <section id="inicio">
+        <h1>Elige tus Accesorios</h1>
+    </section>
+
+    <main>
+        <section class="productos">
+            <section id="compus">
+                <div class="container">
+                    <h2 class="titulos">Computadoras</h2>
+                    <div class="galeria">
+                            <!-- Producto 1-->
+                            <div class="producto">
+                                    <img src="https://i.blogs.es/afcf1f/comprar-teclado-mars-gaming-al-mejor-precio/450_1000.jpg" alt="Teclado">
+                                    <p>Teclado <br> Precio: Q60</p>
+                            </div>
+                            <!-- Producto 2-->
+                            <div class="producto">
+                                    <img src="https://www.lacuracaonline.com/media/catalog/product/4/5/458472900012_1.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700" alt="Mouse">
+                                    <p>Mouse <br> Precio: Q35</p>
+                            </div>
+                            <!-- Producto 3-->
+                            <div class="producto">
+                                    <img src="https://www.stf.tech/cdn/shop/products/mousepad-gamer-stf-beast-abysmal-arena-luz-led-gaming-para-computadora-stg-a16901-122765_grande.jpg?v=1687897507" alt="MousePad">
+                                    <p>MousePad <br> Precio: Q25</p>
+                            </div><!-- Producto 4-->
+                            <div class="producto">
+                                    <img src="https://www.officedepot.com.gt/medias/36996.jpg-1200ftw?context=bWFzdGVyfHJvb3R8NDk3MjM0fGltYWdlL2pwZWd8YURBMEwyZ3hZaTg1T1RFd09UWTRPRGMzTURnMkxtcHdad3wwNmI5YzM1ZGIyNWMyZGUyZTkxMzE1ZjY1N2Q5YTI2NzA5YWNhNTgyYmNiMzg3MzYyZjg0MjkyYmY0ZjI3MjJk" alt="Audífonos">
+                                    <p>Audífonos <br> Precio: Q150</p>
+                            </div>
+                            <!-- Producto 5-->
+                            <div class="producto">
+                                    <img src="https://www.radioshackla.com/media/catalog/product/4/5/458025300016_1.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=200&width=200&canvas=200:200" alt="Bocinas">
+                                    <p>Bocinas <br> Precio: Q140</p>
+                            </div>
+                            <!-- Producto 6-->
+                            <div class="producto">
+                                    <img src="https://i5.walmartimages.com/seo/1080P-Web-Cam-HD-Camera-Webcam-with-Mic-Microphone-for-Computer-PC-Laptop-Notebook_dc507d76-2a47-420e-a709-13ddfa1c6396.c2b93dba35f7ed0bb10e6bacac3173a2.jpeg" alt="Webcam">
+                                    <p>Webcam <br> Precio: Q120</p>
+                            </div>
+                            <!-- Producto 7-->
+                            <div class="producto">
+                                    <img src="https://www.radioshackla.com/media/catalog/product/4/5/456079800018_1.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=&width=&canvas=:" alt="Micrófono">
+                                    <p>Micrófono <br> Precio: Q90</p>
+                            </div>
+                            <!-- Producto 8-->
+                            <div class="producto">
+                                    <img src="https://media.kingston.com/kingston/opengraph/ktc-usb-flash-drives-differences-usb-2-gen1-gen2-og.jpg" alt="Memoria USB">
+                                    <p>Memoria USB <br> Precio: Q32</p>
+                            </div>
+                            <!-- Producto 9-->
+                            <div class="producto">
+                                    <img src="https://i5.walmartimages.com/asr/7fe3bba3-4877-4a1c-a49e-00bb761d497e.9da577ede45c985094c0ae8166ff7385.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF" alt="Disco duro externo">
+                                    <p>Disco duro externo <br> Precio: Q1500</p>
+                            </div>
+                            <!-- Producto 10-->
+                            <div class="producto">
+                                    <img src="https://m.media-amazon.com/images/I/61KuIRIntYL._AC_UF894,1000_QL80_.jpg" alt="Adaptador USB">
+                                    <p>Adaptador USB <br> Precio: Q120</p>
+                            </div>
+                            <!-- Producto 11-->
+                            <div class="producto">
+                                    <img src="https://i.blogs.es/7d02cc/71tbj9heqal._ac_sy450_/450_1000.webp" alt="Cable HDMI">
+                                    <p>Cable HDMI <br> Precio: Q75</p>
+                            </div>
+                            <!-- Producto 12-->
+                            <div class="producto">
+                                    <img src="https://superbocinas.com.gt/images/stories/virtuemart/product/resized/ADJ026-2_0x800.jpg" alt="Base para Laptop">
+                                    <p>Base para Laptop <br> Precio: Q150</p>
+                            </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="cel">
+                <div class="container">
+                    <h2 class="titulos">Teléfonos</h2>
+                    <div class="galeria">
+                        <!-- Producto 1-->
+                         <div class="producto">
+                                <img src="https://i5.walmartimages.com.mx/mg/gm/3pp/asr/9bae7801-d2bf-4678-9b7a-1329d00ac2a1.7e1318c59bcce17cd0b5161104b5ce80.png?odnHeight=612&odnWidth=612&odnBg=FFFFFF" alt="Cargador">
+                                <p>Cargador <br> Precio: Q75</p>
+                         </div>
+                         <!-- Producto 2-->
+                         <div class="producto">
+                                <img src="https://cdn.kemik.gt/2023/02/60136-UGREEN-CABLE-MICROUSB-1200X1200-1.-500x500.jpg" alt="Cable USB">
+                                <p>Cable USB <br> Precio: Q40</p>
+                         </div>
+                         <!-- Producto 3-->
+                         <div class="producto">
+                                <img src="https://exitocol.vtexassets.com/arquivos/ids/10956445/audifonos-para-celular-and-color-blanco.jpg" alt="Audífonos">
+                                <p>Audífonos <br> Precio: Q30</p>
+                         </div>
+                         <!-- Producto 4-->
+                         <div class="producto">
+                                <img src="https://m.media-amazon.com/images/I/61EKMVL7ulL._AC_UF894,1000_QL80_.jpg" alt="Funda">
+                                <p>Funda <br> Precio: Q20</p>
+                         </div>
+                         <!-- Producto 5-->
+                         <div class="producto">
+                                <img src="https://i.blogs.es/323a4a/new-project-4-/650_1200.jpeg" alt="Power Bank">
+                                <p>Power Bank <br> Precio: Q60</p>
+                         </div>
+                         <!-- Producto 6-->
+                         <div class="producto">
+                                <img src="https://www.radioshackla.com/media/catalog/product/4/5/458626700017.1.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=&width=&canvas=:" alt="Soporte para Teléfonos">
+                                <p>Soporte para Teléfonos <br> Precio: Q25</p>
+                         </div>
+                         <!-- Producto 7-->
+                         <div class="producto">
+                                <img src="https://selectsound.com.mx/cdn/shop/products/audifonos-bluetooth-inalabricos-tws-dots-select-sound-719758_1080x1080.jpg?v=1699089111" alt="Audífonos Bluetooth">
+                                <p>Audífonos Bluetooth <br> Precio: Q200</p>
+                         </div>
+                         <!-- Producto 8-->
+                         <div class="producto">
+                                <img src="https://walmartgt.vtexassets.com/arquivos/ids/463665-800-450?v=638419025966000000&width=800&height=450&aspect=true" alt="Selfie Stick">
+                                <p>Selfie Stick <br> Precio: Q150</p>
+                         </div>
+                         <!-- Producto 9-->
+                         <div class="producto">
+                                <img src="https://mitecno.gt/image/catalog/1-144/00007/imagenes-actualizadas/Adaptador-OTG.jpg" alt="Adaptador OTG">
+                                <p>Adaptador OTG <br> Precio: Q90</p>
+                         </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+        <p>
+            &Copy @Todos los Derecehos Reservados
+        </p>
+        </div>
+    </footer>
+</body>
+</html>
