@@ -139,6 +139,39 @@ footer .container{
     justify-content: center;
     align-items: flex-end;
 }
+
+.volver-menu-container{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+/* Botón volver */
+.boton-volver{
+    background-color: var(--verde-principal);
+    color: var(--blanco);
+    border: none;
+    padding: 15px 35px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+/* Hover */
+.boton-volver:hover{
+    background-color: var(--verde-claro);
+    color: var(--gris-texto);
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Click */
+.boton-volver:active{
+    transform: scale(0.95);
+}
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -147,11 +180,7 @@ footer .container{
     <header>
         <div class="container">
             <p class="logo">Accesorios para Computadoras y Teléfonos</p>
-            <nav>
-                <a href="#index.html">Inicio</a>
-                <a href="#computadoras">Computadoras</a>
-                <a href="#telefonos">Teléfonos</a>
-            </nav>
+            <button class="boton-volver" onclick="volverMenu()">← Volver al Menú</button>
         </div>
     </header>
     <section id="inicio">
@@ -289,5 +318,11 @@ footer .container{
         </p>
         </div>
     </footer>
+
+    <script>
+    function volverMenu() {
+        window.location.href = "index.html";
+    }
+</script>
 </body>
 </html>
