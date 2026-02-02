@@ -97,21 +97,29 @@
         }
 
         /* Botón volver */
-.boton-volver {
-    background: rgba(255, 255, 255, 0.25);
-    border: none;
-    color: #ffffff;
-    padding: 10px 18px;
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 14px;
-    transition: all 0.3s ease;
-}
+        .boton-volver {
+            background: rgba(255, 255, 255, 0.25);
+            border: none;
+            color: #ffffff;
+            padding: 10px 18px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
 
-.boton-volver:hover {
-    background: rgba(255, 255, 255, 0.4);
-    transform: scale(1.05);
-}
+        .boton-volver:hover {
+            background: rgba(255, 255, 255, 0.4);
+            transform: scale(1.05);
+        }
+
+        .grid .card:nth-child(5) {
+            grid-column: 2;
+        }
+
+        .grid .card:nth-child(6) {
+            grid-column: 3;
+        }
     </style>
 </head>
 <body>
@@ -185,13 +193,9 @@
     </div>
 
 <script>
-
     function volverMenu() {
-
         window.location.href = "index.html";
-
     }
 </script>
 </body>
 </html>
- 
