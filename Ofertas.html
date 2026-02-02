@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sección de Ofertas</title>
+
+<style>
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background-color:#B2DFDB;
+}
+
+/* TÍTULO */
+header{
+  background:#269B97;
+  color:white;
+  text-align:center;
+  padding:20px;
+  font-size:24px;
+  font-weight:bold;
+}
+
+/* CONTENEDOR GENERAL */
+.contenedor{
+  width:90%;
+  margin:30px auto;
+}
+
+/* MARCA */
+.marca{
+  background:#4DB6AC;
+  color:white;
+  padding:12px;
+  font-size:20px;
+  font-weight:bold;
+  border-radius:8px;
+  margin-bottom:15px;
+}
+
+/* TARJETA PRODUCTO */
+.producto{
+  background:white;
+  display:flex;
+  gap:20px;
+  padding:20px;
+  margin-bottom:20px;
+  border-radius:12px;
+  box-shadow:0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* IMAGEN */
+.producto img{
+  width:280px;
+}
+
+/* INFO */
+.info{
+  flex:1;
+}
+
+.precio-anterior{
+  text-decoration:line-through;
+  color:#777;
+}
+
+.precio-nuevo{
+  color:#D32F2F;
+  font-size:20px;
+  font-weight:bold;
+}
+
+ul{
+  padding-left:18px;
+}
+</style>
+</head>
+
+<body>
+<script>
+    function volverMenu() {
+        window.location.href = "index.html";
+    }
+</script>
+
+<header>🔥 OFERTAS TECHSTORE 🔥</header>
+<button class="boton-volver" onclick="volverMenu()">← Volver al Menú</button>
+<div class="contenedor">
+
+  <div class="marca">Xiaomi</div>
+
+  <div class="producto">
+    <img src="https://elektragt.vtexassets.com/arquivos/ids/205383-800-auto?v=639054122588270000">
+    <div class="info">
+      <h3>Xiaomi Redmi Note 15 Liberado</h3>
+      <p class="precio-anterior">De: Q2,309.00</p>
+      <p class="precio-nuevo">Ahora: Q2,199.00</p>
+      <ul>
+        <li>8GB RAM</li>
+        <li>256GB ROM</li>
+        <li>MediaTek Helio G100-Ultra</li>
+        <li>Color Verde</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="producto">
+    <img src="https://elektragt.vtexassets.com/arquivos/ids/205371-800-auto?v=639054086202830000">
+    <div class="info">
+      <h3>Xiaomi Redmi Note 14 Pro</h3>
+      <p class="precio-anterior">De: Q2,199.00</p>
+      <p class="precio-nuevo">Ahora: Q1,999.00</p>
+      <ul>
+        <li>Liberado</li>
+        <li>Color Azul</li>
+        <li>8GB RAM</li>
+        <li>256GB ROM</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="producto">
+    <img src="https://elektragt.vtexassets.com/arquivos/ids/205033-800-auto?v=639045297098200000">
+    <div class="info">
+      <h3>Xiaomi Redmi Note 15 Pro</h3>
+      <p class="precio-anterior">De: Q4,899.00</p>
+      <p class="precio-nuevo">Ahora: Q4,599.00</p>
+      <ul>
+        <li>5G Dual SIM</li>
+        <li>12GB RAM</li>
+        <li>512GB ROM</li>
+        <li>Snapdragon 7 Gen 4</li>
+        <li>Color Café</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="marca">Apple</div>
+
+  <div class="producto">
+    <img src="https://elektragt.vtexassets.com/arquivos/ids/201196-800-auto?v=638823328931400000">
+    <div class="info">
+      <h3>iPhone 13 (Tigo)</h3>
+      <p class="precio-anterior">De: Q6,099.00</p>
+      <p class="precio-nuevo">Ahora: Q3,799.00</p>
+      <ul>
+        <li>128GB ROM</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="producto">
+    <img src="https://elektragt.vtexassets.com/arquivos/ids/204760-800-auto?v=639039408040700000">
+    <div class="info">
+      <h3>iPhone 17 (Tigo)</h3>
+      <p class="precio-anterior">De: Q9,499.00</p>
+      <p class="precio-nuevo">Ahora: Q8,399.00</p>
+      <ul>
+        <li>Procesador A19</li>
+        <li>8GB RAM</li>
+        <li>256GB ROM</li>
+        <li>Colores varios</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="producto">
+    <img src="https://elektragt.vtexassets.com/arquivos/ids/199550-800-auto?v=638745484858570000">
+    <div class="info">
+      <h3>iPhone 16 (Tigo)</h3>
+      <p class="precio-anterior">De: Q8,499.00</p>
+      <p class="precio-nuevo">Ahora: Q7,299.00</p>
+      <ul>
+        <li>128GB ROM</li>
+      </ul>
+    </div>
+  </div>
+  <div class="marca">Computadoras</div>
+
+  <div class="producto">
+    <img src="https://elektragt.vtexassets.com/arquivos/ids/204876-800-auto?v=639041051942730000&width=800&height=auto&aspect=true">
+    <div class="info">
+      <h3>Laptop Acer A3 </h3>
+      <p class="precio-anterior">De: Q7,299.00</p>
+      <p class="precio-nuevo">Ahora: Q3,999.00</p>
+      <ul>
+        <li>Ci5-1235U</li>
+        <li>512GB </li>
+        <li>16GB RAM</li>
+        <li>Color Verde</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="producto">
+    <img src="https://elektragt.vtexassets.com/arquivos/ids/204873-800-auto?v=639040869014330000&width=800&height=auto&aspect=true">
+    <div class="info">
+      <h3>Kit Laptop Celeron UB240ESP </h3>
+      <p class="precio-anterior">De: Q1,399.00</p>
+      <p class="precio-nuevo">Ahora: Q1,999.00</p>
+      <ul>
+        <li>4GB RAM</li>
+        <li>128GB </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="producto">
+    <img src="https://elektragt.vtexassets.com/arquivos/ids/203187-800-auto?v=638944989051600000&width=800&height=auto&aspect=true">
+    <div class="info">
+      <h3>Laptop HP Victus Ryzen 5</h3>
+      <p class="precio-anterior">De: Q9,199.00</p>
+      <p class="precio-nuevo">Ahora: Q7,599.00</p>
+      <ul>
+        <li>8GB RAM</li>
+        <li>512GB ROM</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+</body>
+</html>
