@@ -86,6 +86,7 @@ header a:hover{
     color: var(--verde-claro);
 }
 
+
 main {
     display: flex;
     margin: 20px;
@@ -146,7 +147,6 @@ footer .container{
     margin: 40px 0;
 }
 
-/* Botón volver */
 .boton-volver{
     background-color: var(--verde-principal);
     color: var(--blanco);
@@ -160,7 +160,6 @@ footer .container{
     transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
 }
 
-/* Hover */
 .boton-volver:hover{
     background-color: var(--verde-claro);
     color: var(--gris-texto);
@@ -168,9 +167,60 @@ footer .container{
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Click */
 .boton-volver:active{
     transform: scale(0.95);
+}
+
+.btn-regresar {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 25px;
+    background-color: var(--verde-principal);
+    color: var(--blanco);
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-regresar:hover {
+    background-color: var(--verde-claro);
+    color: var(--gris-texto);
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+header .botones-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+header .menu-principal {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+header .menu-principal a,
+header .menu-principal .boton-volver {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--blanco);
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+header .menu-principal .boton-volver {
+    background-color: var(--verde-principal);
+    border: none;
+    cursor: pointer;
+}
+header .menu-principal a:hover,
+header .menu-principal .boton-volver:hover {
+    background-color: var(--verde-claro);
+    color: var(--gris-texto);
 }
     </style>
     <meta charset="UTF-8">
@@ -178,9 +228,12 @@ footer .container{
     <title>Accesorios</title>
 <body>
     <header>
-        <div class="container">
+        <div class="botones-header">
             <p class="logo">Accesorios para Computadoras y Teléfonos</p>
+            <nav class="menu-principal">
             <button class="boton-volver" onclick="volverMenu()">← Volver al Menú</button>
+            <a href="humbertoPerez.html" class="btn-regresar">Ir a Desarrollador</a>
+            </nav>
         </div>
     </header>
     <section id="inicio">

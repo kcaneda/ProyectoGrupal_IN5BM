@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+:root{
+    --verde-oscuro: #0b8a7c;
+    --verde-principal: #3aa79a;
+    --verde-suave: #5fc3b2;
+    --verde-claro: #7fe3cf;
+    --verde-muy-claro: #a8f5e6;
+    --blanco: #ffffff;
+    --gris-texto: #2f4f4f;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #3aa79a, #0b8a7c);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.container p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.btn-regresar {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 25px;
+    background-color: #1d2671;
+    color: #fff;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-regresar:hover {
+    background-color: #c33764;
+    transform: scale(1.05);
+}
+
+#personal {
+    border-top: 2px solid #ccc;
+    padding-top: 20px;
+    margin-top: 30px;   
+    margin-bottom: 40px; 
+}
+
+.titulos {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1d2671;
+}
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quien Soy?</title>
+</head>
+<body>
+    <div class="container">
+        <p>
+            Mi Nombre es Humberto Alessandro Pérez González <br> 
+            Código Académico: PE5EM <br> 
+            Código Técnico: IN5BM <br> 
+            Mis gustos son Juegos de Estrategias, Futbol <br>
+            También el Dibujo Técnico
+        </p>
+
+        <section id="personal">
+                <h2 class="titulos">Información</h2>
+                <div class="gustos">
+                    <div class="mis gustos">
+                        <p>Me Gusta el anime Dragon Ball, Blue Lock</p>
+                    </div>
+
+                    <div class="mis gustos ">
+                        <p>Mi equipo favorito es el FC Barcelona</p>
+                    </div>
+
+                    <div class="mis gustos">
+                        <p>Mi comida favorita es el Adobado con fideos, también la Pizza</p>
+                    </div>
+                </div>
+        </section>
+         <a href="Accesorios.html" class="btn-regresar">Regresar</a>
+    </div>
+</body>
+</html>
